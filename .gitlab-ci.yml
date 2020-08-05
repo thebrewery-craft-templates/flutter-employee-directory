@@ -1,0 +1,14 @@
+image: openjdk:8-jdk
+
+before_script:
+  - echo "Insert your before script here"
+
+stages:
+  - build
+
+build:apk:
+  stage: build
+  script:
+    - echo "Insert your script here"
+  only:
+    - master
